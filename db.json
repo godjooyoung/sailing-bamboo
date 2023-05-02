@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "title": "ㅇㅇㅇㅇ",
+      "content": "ㅁㅇㄹㅁㄴㅇㄹ",
+      "postPw": "0000",
+      "rgstrTime": "2023-05-01",
+      "rgstrId": "anonymous",
+      "modifyTime": "2023-05-01",
+      "id": 3
+    },
+    {
+      "title": "이게 맞나",
+      "content": "123123123",
+      "postPw": "dksldi1",
+      "rgstrTime": "2023-05-01",
+      "rgstrId": "anonymous",
+      "modifyTime": "2023-05-01",
+      "id": 4
+    },
+    {
+      "title": "123",
+      "content": "123",
+      "postPw": "123",
+      "rgstrTime": "2023-05-02",
+      "rgstrId": "anonymous",
+      "modifyTime": "2023-05-02",
+      "id": 6
+    },
+    {
+      "title": "123",
+      "content": "123123123112",
+      "postPw": "123",
+      "rgstrTime": "2023-05-02",
+      "rgstrId": "anonymous",
+      "modifyTime": "2023-05-02",
+      "id": 7
+    },
+    {
+      "title": "123123",
+      "content": "123",
+      "postPw": "123",
+      "rgstrTime": "2023-05-02",
+      "rgstrId": "anonymous",
+      "modifyTime": "2023-05-02",
+      "id": 8
+    },
+    {
+      "title": "123",
+      "content": "123",
+      "postPw": "1231231231",
+      "rgstrTime": "2023-05-02",
+      "rgstrId": "anonymous",
+      "modifyTime": "2023-05-02",
+      "id": 9
+    }
+  ]
+}
