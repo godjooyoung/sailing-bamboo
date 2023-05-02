@@ -53,6 +53,24 @@
       "rgstrId": "anonymous",
       "modifyTime": "2023-05-02",
       "id": 9
+    },
+    {
+      "title": "항해 크루분들 혹시 그 소식 들으셨나요? ",
+      "content": "항해 화이팅",
+      "postPw": "1234",
+      "rgstrTime": "2023-05-02",
+      "rgstrId": "anonymous",
+      "modifyTime": "2023-05-02",
+      "id": 10
+    },
+    {
+      "title": "항해 하시는분들 화이팅입니다",
+      "content": "아자아자",
+      "postPw": "1234",
+      "rgstrTime": "2023-05-02",
+      "rgstrId": "anonymous",
+      "modifyTime": "2023-05-02",
+      "id": 11
     }
   ]
 }
