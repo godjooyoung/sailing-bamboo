@@ -11,7 +11,6 @@ const instance = axios.create({
 const otherInstance = axios.create({
     baseURL: process.env.REACT_APP_SERVER_URL,
     headers: {
-        'cors-proxy-url': 'http://3.38.191.164/',
         'Content-Type': "application/json",
         'authorization': 'Bearer '+ getCookie("token"),
         'x-requested-with': 'bamboo-forest'
