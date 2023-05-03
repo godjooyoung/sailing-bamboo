@@ -11,15 +11,12 @@ const componentModeSlice = createSlice({
     reducers: {
         registerIsActive: (state, payload) => {
             state.registerIsActive = payload.payload
-            console.log("Register.jsx is Active? ", state.registerIsActive)
         },
         postIsEditMode: (state, payload) => {
             state.postIsEditMode = payload.payload
-            console.log("Post.jsx is EditMode? ", state.postIsEditMode)
         },
         pwConfirmIsActive: (state, payload) => {
             state.pwConfirmIsActive = payload.payload
-            console.log("PwConfirm.jsx is Active? ", state.pwConfirmIsActive)
         }
     }
 })
