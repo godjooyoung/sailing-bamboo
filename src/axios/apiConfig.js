@@ -12,7 +12,8 @@ const otherInstance = axios.create({
     baseURL: process.env.REACT_APP_SERVER_URL,
     headers: {
         "Content-Type": "application/json",
-        'authorization': 'Bearer '+ getCookie("token") 
+        'authorization': 'Bearer '+ getCookie("token"),
+        'x-requested-with': 'bamboo-forest'
     }
 })
 
