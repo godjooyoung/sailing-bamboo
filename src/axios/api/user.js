@@ -16,7 +16,7 @@ export const loginUser = async (inputValue) => {
 export const chkToken = async (token) => {
     const response = await otherInstance.get(`/user/`, {
         headers: {
-        'Origin': 'http://3.38.191.164/',
+        'cors-proxy-url': 'http://3.38.191.164/',
         'Content-Type': 'application/json',
         'authorization': 'Bearer '+ token,
         'x-requested-with': 'bamboo-forest',
