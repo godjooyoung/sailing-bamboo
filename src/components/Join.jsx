@@ -13,7 +13,6 @@ function Join() {
     const navigate = useNavigate();
 
     useEffect(()=>{
-        console.log("최초랜더링 시 로그인 여부 체크")
         const cookie = getCookie("token");
             if(cookie){
                 alert(`이미 로그인 하셨습니다.\n 대나무숲으로 바로가기`)
@@ -35,7 +34,7 @@ function Join() {
     const addUserMutate = useMutation(addUser, {
         onSuccess: (response) => {
             alert(`${id}님 가입이 완료되었습니다.\n로그인 후 이용해 주세요.`)
-            navigate('/'); //로그인 페이지로 이동
+            navigate('/')
         },
         onError : (error) => {
             alert(error + '\n다른 id를 입력해주세요.')
@@ -86,7 +85,7 @@ function Join() {
                 </cs.LoginImgHeader>
                 <cs.InputDiv>
                     <cs.Input type="text" value={id} onChange={(e)=>{
-                        onChangeId(e);
+                        onChangeId(e)
                         setIdHelpMsg(helpMsgArr[0])
                     }} placeholder='아이디'/>
                 </cs.InputDiv>

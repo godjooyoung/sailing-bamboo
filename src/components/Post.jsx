@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from "react-query"; // 서버요청 및 미들웨어
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getPost, updatePost } from "../axios/api/post";
-import { chkToken } from "../axios/api/user";
 import Button from '../components/common/Button';
-import { getCookie, removeCookie } from '../cookie/Cookie';
 import { postIsEditMode, pwConfirmIsActive } from '../redux/modules/componentMode';
 import * as cs from '../style/commonStyle';
 import PwConfirm from './PwConfirm';
@@ -28,27 +26,10 @@ function Post() {
 
     const params = useParams();
     const dispatcher = useDispatch()
-    // const navigate = useNavigate()
-    // const hasToken = getCookie("token");
 
     // 리액트 쿼리 관련
     const queryClient = useQueryClient();
     const { isLoading, isError, data } = useQuery("getPost", () => (getPost(params.id)))
-    // const chkTokenObj = useQuery('chkToken', ()=>(chkToken(hasToken)), {
-    //     refetchOnMount : 'always'
-    // })
-
-    // useEffect(() => {
-    //     if(chkTokenObj.isError){
-    //         alert('로그인 세션이 만료되었습니다. 재로그인 해주세요.')
-    //         removeCookie("token")
-    //         navigate('/'); //로그인 페이지로 이동
-    //     }
-    //     if (!hasToken) {
-    //         alert(`로그인 후 이용 가능합니다.`)
-    //         navigate('/'); //로그인 페이지로 이동
-    //     }
-    // })
 
     // 서버로부터 데이터를 받아오면 해당 데이터를 원본값과 수정값에 설정해준다.
     useEffect(() => {
@@ -76,9 +57,6 @@ function Post() {
             queryClient.invalidateQueries("getPost")
         }
     })
-
-
-
 
     if (isLoading) {
         return <h1>로딩중입니다.</h1>
@@ -136,7 +114,7 @@ function Post() {
                     {_isEditMode ? <cs.InputDiv><cs.Input type="text" defaultValue={editedPost.title} onChange={updateTitle} /></cs.InputDiv> : <>{data.title}<cs.DetialsTime>{data.modifyTime}</cs.DetialsTime></>}
                 </cs.RoundRowBody>
                 <cs.RoundListTopHeader>
-                    {_isEditMode ? <cs.TextAreaDiv marginBottom="12"><cs.TextArea rows="10" type="text" defaultValue={editedPost.content} onChange={updateContent} /></cs.TextAreaDiv> : <cs.DetailsContentDiv>{data.content}</cs.DetailsContentDiv>}
+                    {_isEditMode ? <cs.TextAreaDivView marginBottom="0"><cs.TextArea rows="10" type="text" defaultValue={editedPost.content} onChange={updateContent} /></cs.TextAreaDivView> : <cs.DetailsContentDiv>{data.content}</cs.DetailsContentDiv>}
                     {_isEditMode ? <cs.HelptMsgPositoning bottomPositon='8'>{helpMsg}</cs.HelptMsgPositoning> : <cs.HelptMsg></cs.HelptMsg>}
                 </cs.RoundListTopHeader>
                 <cs.BtnWrapP10>

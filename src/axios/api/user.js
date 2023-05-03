@@ -14,13 +14,11 @@ export const loginUser = async (inputValue) => {
 
 // 토큰정보확인
 export const chkToken = async (token) => {
-    console.log("3.chkToken, token",token)
     const response = await otherInstance.get(`/user/`, {
         headers: {
         'Content-Type': 'application/json',
         'authorization': 'Bearer '+ token 
     }})
-    console.log("4.chkToken, ",response)
     return response
 }
 

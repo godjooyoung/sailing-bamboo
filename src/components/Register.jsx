@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { useMutation, useQuery, useQueryClient } from 'react-query'; // 서버요청 및 미들웨어
+import React, { useState } from 'react';
+import { useMutation, useQueryClient } from 'react-query'; // 서버요청 및 미들웨어
 import { useDispatch } from 'react-redux';
-import { useNavigate } from "react-router-dom";
 import { addPost } from "../axios/api/post";
-import { chkToken } from "../axios/api/user";
 import Button from '../components/common/Button';
-import { getCookie, removeCookie } from '../cookie/Cookie';
 import { registerIsActive } from '../redux/modules/componentMode';
 import * as cs from '../style/commonStyle';
 
@@ -27,24 +24,6 @@ function Register() {
         }
     })
 
-    const navigate = useNavigate()
-    /*
-    const hasToken = getCookie("token")
-    const chkTokenObj = useQuery('chkToken', ()=>(chkToken(hasToken)))
-    useEffect(() => {
-        if(chkTokenObj.isError){
-            alert('로그인 세션이 만료되었습니다. 재로그인 해주세요.')
-            removeCookie("token")
-            deactiveModal()
-            navigate('/'); //로그인 페이지로 이동
-        }
-        if (!hasToken) {
-            alert(`로그인 후 이용 가능합니다.`)
-            navigate('/'); //로그인 페이지로 이동
-        }
-    },[chkTokenObj.isError])
-
-*/
     // 컴포넌트 내부에서 사용할 state 정의
     const helpMsgArr = ['비밀번호는 필수입니다.', '내용은 필수입니다.', '제목은 필수입니다.']
     const [helpMsg, setHelpMsg] = useState('')
