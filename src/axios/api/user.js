@@ -17,7 +17,9 @@ export const chkToken = async (token) => {
     const response = await otherInstance.get(`/user/`, {
         headers: {
         'Content-Type': 'application/json',
-        'authorization': 'Bearer '+ token 
+        'authorization': 'Bearer '+ token,
+        'x-requested-with': 'bamboo-forest',
+        'Origin': 'http://3.38.191.164/' 
     }})
     return response
 }
