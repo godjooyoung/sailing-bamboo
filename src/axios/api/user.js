@@ -19,6 +19,7 @@ export const chkToken = async (token) => {
         'Content-Type': 'application/json',
         'authorization': 'Bearer '+ token,
         'x-requested-with': 'bamboo-forest',
+        'x-cors-api-key': 'temp_77c33b11fb4f65211c70c8e6ddcc8768'
     }})
     return response
 }
