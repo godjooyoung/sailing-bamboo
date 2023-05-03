@@ -16,7 +16,7 @@ function Login() {
         const cookie = getCookie("token");
             if(cookie){
                 alert(`이미 로그인 하셨습니다.\n 대나무숲으로 바로가기`)
-                navigate('/main'); //로그인 페이지로 이동
+                navigate('/main')
             }
     },[])
     // 커스텀 훅
@@ -31,13 +31,14 @@ function Login() {
         onSuccess: (response) => {
             if(response.data.token){
                 setCookie('token', response.data.token, {
-                    path:"/"
+                    path:"/",
+                    maxAge : 600 //만료시간 10분, 초 단위
                 })
             }
             const cookie = getCookie("token");
             if(cookie){
                 alert(`${id}님 환영합니다. 대나무숲을 달려볼까요?`)
-                navigate('/main'); //로그인 페이지로 이동
+                navigate('/main')
             }
         },
         onError: (error) => {
