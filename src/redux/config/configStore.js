@@ -5,7 +5,8 @@ import componentMode from "../modules/componentMode";
 const store = configureStore({
     reducer : {
         componentMode
-    }
+    },
+    devTools: false
 })
 
 export default store
