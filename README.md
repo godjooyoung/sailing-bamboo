@@ -50,17 +50,23 @@ yarn create react-app 프로젝트명
 ```
 
 # 실행화면
-### 홈화면
-<img width="900" alt="홈화면" src="https://user-images.githubusercontent.com/58963027/235735033-5503a263-d646-4f12-9611-e8423b0274b2.png">
+### 로그인
+<img width="1000" alt="로그인" src="https://user-images.githubusercontent.com/58963027/235837217-2093ca2b-4a36-481e-8f4c-bf9fd2f32407.png">
 
 ### 회원가입
-<img width="900" alt="회원가입" src="https://user-images.githubusercontent.com/58963027/235735056-fb9a8c88-2fa7-465f-85fa-c492ed9c004e.png">
+<img width="1000" alt="회원가입" src="https://user-images.githubusercontent.com/58963027/235837231-6c910e8f-d93b-48bc-a595-473e955bf81b.png">
 
-### 글작성 모달
-<img width="900" alt="글작성 팝업" src="https://user-images.githubusercontent.com/58963027/235735089-fa5e7335-ee24-44c1-bc6d-03da7c666d42.png">
+### 게시글 목록
+<img width="1000" alt="글목록" src="https://user-images.githubusercontent.com/58963027/235837251-51027075-58c7-492d-89cc-b02ab4cedba7.png">
 
-### 게시글 상세보기
-<img width="900" alt="게시글 상세보기" src="https://user-images.githubusercontent.com/58963027/235735115-4cac8665-896a-4dfd-9881-99ee13cd307c.png">
+### 게시글 상세 보기
+<img width="1000" alt="게시글 상세보기" src="https://user-images.githubusercontent.com/58963027/235837258-6ea16938-c2e0-402e-820f-5bba85dd650f.png">
 
-### 수정/삭제 모달
-<img width="900" alt="수정/삭제 팝업" src="https://user-images.githubusercontent.com/58963027/235735125-a90710c8-8526-40fd-97c2-df7fbc04a0fe.png">
+### 게시글 작성 모달
+<img width="1000" alt="게시글작성 모달" src="https://user-images.githubusercontent.com/58963027/235837264-90aee6ee-a988-481e-942f-d2849f47abb6.png">
+
+### 게시글 수정하기
+<img width="1000" alt="게시글 수정하기" src="https://user-images.githubusercontent.com/58963027/235837272-16f34024-f446-40b1-a71c-5ce6207d16de.png">
+
+### 게시글 수정, 삭제 모달
+<img width="1000" alt="게시글 수정 삭제 모달" src="https://user-images.githubusercontent.com/58963027/235837284-28cb370b-30ef-483b-bf07-65fe0d714b52.png">
