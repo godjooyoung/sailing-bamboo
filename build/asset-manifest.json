@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4d52d7a0.css",
+    "main.js": "/static/js/main.52d7f2c1.js",
+    "static/media/running_jindo.gif": "/static/media/running_jindo.c5eacd7e8f0c6bf1a06a.gif",
+    "static/media/main.png": "/static/media/main.0fc59ca8c9928798fb0f.png",
+    "index.html": "/index.html",
+    "main.4d52d7a0.css.map": "/static/css/main.4d52d7a0.css.map",
+    "main.52d7f2c1.js.map": "/static/js/main.52d7f2c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d52d7a0.css",
+    "static/js/main.52d7f2c1.js"
+  ]
+}
