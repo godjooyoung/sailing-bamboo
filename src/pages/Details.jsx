@@ -38,10 +38,6 @@ function Details() {
             removeCookie("token")
             navigate('/'); //로그인 페이지로 이동
         }
-        if (!hasToken) {
-            alert(`로그인 후 이용 가능합니다.`)
-            navigate('/'); //로그인 페이지로 이동
-        }
         setIsFist(true) // 최초 랜더링때는 세션여부를 체크하지 않기 위해서 추가
     },[isError])
 
