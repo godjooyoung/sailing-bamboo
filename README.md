@@ -4,6 +4,9 @@ yarn create react-app 프로젝트명
 # 필요 라이브러리 및 패키지 설치
 라우터, 리덕스 툴킷, json-server react-query, 쿠키 라이브러리
 
+# API 명세
+[항해 99 대나무숲 API 명세서](https://www.notion.so/b811d026f98b400d8a32cf3aa908ef5c)
+
 # 프로젝트 구조
 ```text
 📦src
@@ -45,6 +48,7 @@ yarn create react-app 프로젝트명
  ┃ ┗ 📜commonStyle.js
  ┣ ...
 ```
+
 # 실행화면
 ### 홈화면
 <img width="900" alt="홈화면" src="https://user-images.githubusercontent.com/58963027/235735033-5503a263-d646-4f12-9611-e8423b0274b2.png">
