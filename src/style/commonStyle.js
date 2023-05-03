@@ -187,7 +187,7 @@ export const RoundList = styled.div`
     background-color: white;
     margin :0 30px; 
     min-height: calc(100vh - 1200px);
-    max-height: calc(100vh - 400px);
+    height: calc(100vh - 420px);
 `
 export const RoundListTopHeader = styled.div`
     z-index: 80;
@@ -371,8 +371,12 @@ export const TextAreaDiv = styled.div`
         return props.marginBottom+'px'
     }};
 `
+export const TextAreaDivView = styled(TextAreaDiv)`
+    height: calc(100vh - 624px);
+`
 
 export const DetailsContentDiv = styled.div`
+    height: calc(100vh - 600px);
     white-space:pre-wrap;
 `
 export const DetialsTime = styled.div`
